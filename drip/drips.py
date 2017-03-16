@@ -1,10 +1,10 @@
 import operator
 import functools
+from importlib import import_module
 
 from django.conf import settings
 from django.db.models import Q
 from django.template import Context, Template
-from django.utils.importlib import import_module
 from django.core.mail import EmailMultiAlternatives
 from django.utils.html import strip_tags
 
