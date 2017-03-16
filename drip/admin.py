@@ -89,7 +89,7 @@ class DripAdmin(admin.ModelAdmin):
     def get_urls(self):
         from django.conf.urls import url
         urls = super(DripAdmin, self).get_urls()
-        my_urls = ['',
+        my_urls = [
             url(
                 r'^(?P<drip_id>[\d]+)/timeline/(?P<into_past>[\d]+)/(?P<into_future>[\d]+)/$',
                 self.av(self.timeline),
