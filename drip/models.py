@@ -44,7 +44,7 @@ class Drip(models.Model):
         return self.name
     
     def __str__(self):
-        return "{0}, {1}".format(self.name)
+        return "{0}".format(self.name)
 
 
 
